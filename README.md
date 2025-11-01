@@ -24,24 +24,15 @@ Generate: Pass both the user’s question and the retrieved context into the LLM
 
 
 
+🧰 Components of a RAG System:
 
-        ┌────────────────────┐
-        │  User Query (Q)    │
-        └────────┬───────────┘
-                 │
-         [1] Embed Query (Vector)
-                 │
-         [2] Retrieve Top-k Relevant Docs
-                 │
-        ┌────────▼────────┐
-        │ Retrieved Context│
-        └────────┬────────┘
-                 │
-         [3] Augment Query (Q + Context)
-                 │
-         [4] Pass to LLM → Generate Answer
-                 │
-        ┌────────▼────────┐
-        │ Final Response  │
-        └─────────────────┘
-
+| Step | Component          | Description                                     | Example Tools                           |
+| ---- | ------------------ | ----------------------------------------------- | --------------------------------------- |
+| 1️⃣  | **Data Ingestion** | Load raw data (PDFs, CSVs, web pages, etc.)     | LangChain loaders, LlamaIndex           |
+| 2️⃣  | **Chunking**       | Split large documents into small passages       | LangChain text splitter                 |
+| 3️⃣  | **Embeddings**     | Convert text chunks into vector representations | OpenAI Embeddings, SentenceTransformers |
+| 4️⃣  | **Vector Store**   | Store embeddings for fast similarity search     | FAISS, Chroma, Weaviate, Pinecone       |
+| 5️⃣  | **Retriever**      | Find top-k most relevant chunks                 | Semantic similarity search              |
+| 6️⃣  | **Augmentation**   | Combine context with query                      | Prompt templates                        |
+| 7️⃣  | **Generation**     | Generate grounded answer                        | GPT-4, Claude, Mistral                  |
+| 8️⃣  | **Evaluation**     | Measure factual accuracy, faithfulness          | RAGAS, Trulens                          |
