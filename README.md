@@ -1,4 +1,4 @@
-RAGVerse: The Complete Guide to Retrieval-Augmented Generation (From Basics to Research-Level Implementations)
+# RAGVerse: The Complete Guide to Retrieval-Augmented Generation (From Basics to Research-Level Implementations)
 
 🎯 Aim / Objective of This Repository
 
