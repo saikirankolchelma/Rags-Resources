@@ -1,8 +1,9 @@
-“RAGVerse: The Complete Guide to Retrieval-Augmented Generation (From Basics to Research-Level Implementations)”
+RAGVerse: The Complete Guide to Retrieval-Augmented Generation (From Basics to Research-Level Implementations)
 
 🎯 Aim / Objective of This Repository
 
-The aim of this repository is to collect, understand, and implement all types of Retrieval-Augmented Generation (RAG) systems — from foundational concepts to advanced research-level architectures — in a simple and practical way.
+
+  The aim of this repository is to collect, understand, and implement all types of Retrieval-Augmented Generation (RAG) systems — from foundational concepts to advanced research-level architectures — in a simple    and practical way.
 
 This repository serves as a one-stop learning and experimentation platform for anyone who wants to:
 
