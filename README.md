@@ -21,3 +21,27 @@ RAG fixes this by doing two main things:
 Retrieve: Fetch the most relevant documents/passages from a knowledge source (database, PDF, website, etc.)
 
 Generate: Pass both the user’s question and the retrieved context into the LLM, so it can generate an informed, grounded answer.
+
+
+
+
+        ┌────────────────────┐
+        │  User Query (Q)    │
+        └────────┬───────────┘
+                 │
+         [1] Embed Query (Vector)
+                 │
+         [2] Retrieve Top-k Relevant Docs
+                 │
+        ┌────────▼────────┐
+        │ Retrieved Context│
+        └────────┬────────┘
+                 │
+         [3] Augment Query (Q + Context)
+                 │
+         [4] Pass to LLM → Generate Answer
+                 │
+        ┌────────▼────────┐
+        │ Final Response  │
+        └─────────────────┘
+
