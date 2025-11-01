@@ -31,7 +31,6 @@ This project aims to:
 
 ---
 
-## 🧩 Repository Structure
 
 
 
