@@ -83,8 +83,8 @@ Generate: Pass both the user’s question and the retrieved context into the LLM
 
 
 
-Retrieval-Augmented Generation (RAG) System Types by Design Strategy
-Retrieval Strategy
+# Retrieval-Augmented Generation (RAG) System Types by Design Strategy
+## Retrieval Strategy
 
 Systems in this category differ by how they perform document retrieval, such as single‑hop vs multi‑hop search, query rewriting, or graph-based lookup
 arxiv.org
@@ -140,7 +140,7 @@ RAPTOR (a method to refine retrieved passages)
 
 CAG (Cache-Augmented Generation) (uses a cache to speed up retrieval)
 
-Retrieval Models
+## Retrieval Models
 
 This category groups RAG systems by the underlying retrieval mechanism, e.g. lexical vs. semantic search
 blog.gopenai.com
@@ -173,7 +173,7 @@ Graph-Retriever RAG (queries over a knowledge graph)
 
 Hybrid RAG (integrates both sparse and dense retrievers)
 
-Optimization Techniques
+## Optimization Techniques
 
 These RAG types focus on novel training or optimization methods for the retriever and/or generator. They include approaches that train retrieval end-to-end or refine output. Notable examples are:
 
@@ -195,7 +195,7 @@ Retriever-Fine-Tuned RAG (specialized training of the retriever component)
 
 Self-Training RAG (iteratively uses its own outputs to refine training)
 
-Reasoning Capabilities
+## Reasoning Capabilities
 
 This category covers RAG variants that incorporate enhanced reasoning or multi-step processing, such as self-reflection and chain-of-thought. For example, Self-Reflective RAG (Self-RAG) uses self-critique
 arxiv.org
@@ -229,7 +229,7 @@ Dialogue RAG – designed for multi-turn conversation contexts
 
 Recursive RAG – re-invokes retrieval on intermediate answers for deeper inference
 
-Multi-modality
+## Multi-modality
 
 Systems here can handle non-text data. Multimodal RAG variants retrieve and generate across text, images, audio, etc
 ibm.com
@@ -251,7 +251,7 @@ WavRAG
 arxiv.org
  – integrates raw audio retrieval into RAG (spoken dialogue)
 
-Specialization
+## Specialization
 
 Domain-specific RAG systems tuned for particular fields fall here. Examples include RAG systems built for industries or topics:
 
